@@ -12,12 +12,6 @@ import java.util.Random;
 public class Window extends JFrame {
 
     private static int score = 0; //分数
-    final Font[] fonts = {new Font("Helvetica Neue", Font.BOLD, 60)//对不同长度的文字进行字号调整
-            			, new Font("Helvetica Neue", Font.BOLD, 55)//如PhD使用第一档字号
-            			, new Font("Helvetica Neue", Font.BOLD, 50)//而Meet Supervisor使用第五档字号
-            			, new Font("Helvetica Neue", Font.BOLD, 28)
-                        , new Font("Helvetica Neue", Font.BOLD, 20)
-    };
 
     private GameBoard gameBoard;//游戏主界面
     private JLabel ltitle;//logo
@@ -271,6 +265,8 @@ public class Window extends JFrame {
             return isMove;
         }
         
+        
+        
         //绘图
         @Override
         public void paint(Graphics g) {
@@ -355,6 +351,13 @@ public class Window extends JFrame {
         }
     }
 
+    final Font[] fonts = {new Font("Helvetica Neue", Font.BOLD, 60)//对不同长度的文字进行字号调整
+			, new Font("Helvetica Neue", Font.BOLD, 55)//如PhD使用第一档字号
+			, new Font("Helvetica Neue", Font.BOLD, 50)//而Meet Supervisor使用第五档字号
+			, new Font("Helvetica Neue", Font.BOLD, 28)
+            , new Font("Helvetica Neue", Font.BOLD, 20)
+};
+    
     class Cube {
         public int value;
         public boolean ismerge;
